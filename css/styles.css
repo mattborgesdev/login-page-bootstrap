@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Sans&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F9FD;
+    font-family: 'Fira Code', monospace;
+    width: 100%;
+    height: 100vh;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: unset;
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        background-color: #FFFFFF;
+        height: 90vh;
+    }
+}
+
+.row.form {
+    background-color: #FFFFFF;
+    height: 640px;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 576px) {
+    .row.form {
+        background: transparent;
+    }
+    .shadow{
+        box-shadow: none !important;
+    }
+}
+
+.form__image {
+    background-image: url(/img/img__left.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.col.form__image, .col.form__fields {
+    padding: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+    .form__image {
+        background-image: none;
+        display: none;
+    }
+}
+
+.form__title, .form__social-media {
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 25px;
+}
+
+.form__social-media img {
+    border-radius: 50%;
+    border: rgba(0, 0, 0, 10%) solid 1px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.form__social-media img:hover{
+    border: rgba(0, 0, 0, 20%) solid 1px;    
+}
+
+.form-control, .container-btn .btn{
+    height: 50px;
+}
+
+.container-btn .btn {
+    background-color: #753D32;
+}
+
+.not-registered * span{
+    font-weight: 500;
+    color: #753D32;
+}
